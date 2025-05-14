@@ -47,15 +47,12 @@ public class Joueur {
                 '}';
     }
 
-    public void doQuest(int addXp, int iQuest){
+    public void doQuest(int addXp){
         xp += addXp;
-        iQuest++;
         if (xp >= 100){
             lvl++;
             xp = 0;
             System.out.println("Le joueur "+this.nom+" passe au niveau "+this.lvl);
-        }else System.out.println(" Le joueur "+this.nom+" effectue la quête n°"+iQuest);
+        }
     }
-
-
 }

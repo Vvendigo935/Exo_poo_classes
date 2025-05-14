@@ -19,15 +19,15 @@ public class Main_Joueur {
         System.out.println("Combien de quête souhaitez vous faire ?");
         int q = scanner.nextInt();
 
-        for(int i = 1; i >= q; i++ ){
+        for(int i = 1; i <= q; i++ ){
             System.out.println(joueur+" a terminé la quête n°"+i);
-            joueur.doQuest(10,1);
+            joueur.doQuest(10);
         }
 
-        System.out.println("Saisissez votre nouveau pseudo : ");
+        System.out.println("Saisissez votre nouveau nom : ");
+        scanner.nextLine();
         String name = scanner.nextLine();
         joueur.setNom(name);
         System.out.println(joueur.toString());
-
     }
 }
