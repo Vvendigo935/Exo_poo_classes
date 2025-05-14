@@ -13,7 +13,8 @@ public class Joueur {
     }
 
     public int getLvl() {
-        return lvl;
+        System.out.print(nom+" est lvl ");
+        return  lvl;
     }
 
     public void setLvl(int lvl) {
@@ -29,11 +30,21 @@ public class Joueur {
     }
 
     public int getXp() {
+        System.out.print("Les pts d'exp de "+nom+" sont de ");
         return xp;
     }
 
     public void setXp(int xp) {
         this.xp = xp;
+    }
+
+    @Override
+    public String toString() {
+        return "Joueur{" +
+                "lvl=" + lvl +
+                ", nom='" + nom + '\'' +
+                ", xp=" + xp +
+                '}';
     }
 
     public void doQuest(int addXp, int iQuest){
